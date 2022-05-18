@@ -1,2 +1,2 @@
-# website
-FOSSBilling website, fossbilling.org
+# fossbilling/website
+FOSSBilling website, WIP.
