@@ -1,18 +1,18 @@
 {
   "index": {
-    "title": "Homepage",
-    "welcome": "Welcome to <blue>FOSSBilling</blue>!",
-    "downloadPreview": "Download the latest preview",
+    "title": "Αρχική",
+    "welcome": "Καλώς ήλθατε στο <blue>FOSSBilling</blue>!",
+    "downloadPreview": "Κατεβάστε την τελευταία προεπισκόπηση",
     "links": {
       "sourceCode": "πηγαίος κώδικας",
-      "documentation": "documentation",
+      "documentation": "τεκμηρίωση",
       "discord": "discord",
-      "donate": "donate"
+      "donate": "δωρήστε"
     },
     "cards": {
       "faq": {
         "title": "FAQ",
-        "description": "What happened to BoxBilling?"
+        "description": "Τι συνέβη στο BoxBilling;"
       }
     }
   }
