@@ -1,18 +1,18 @@
 {
   "index": {
-    "title": "Homepage",
-    "welcome": "Welcome to <blue>FOSSBilling</blue>!",
-    "downloadPreview": "Download the latest preview",
+    "title": "Ana sayfa",
+    "welcome": "<blue>FOSSBilling</blue>'e hoş geldiniz!",
+    "downloadPreview": "Son ön izlemeyi indir",
     "links": {
-      "sourceCode": "source code",
-      "documentation": "documentation",
+      "sourceCode": "kaynak kodu",
+      "documentation": "dokümantasyon",
       "discord": "discord",
-      "donate": "donate"
+      "donate": "bağış"
     },
     "cards": {
       "faq": {
-        "title": "FAQ",
-        "description": "What happened to BoxBilling?"
+        "title": "SSS",
+        "description": "BoxBilling'e ne oldu?"
       }
     }
   }
