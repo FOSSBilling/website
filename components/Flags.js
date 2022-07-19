@@ -1,10 +1,18 @@
 // Some locale codes and the countries they are mainly spoken in don't match. We need to map them to the correct country code and leave the rest the same.
 export function LocaleToCountryCode(locale) {
     switch (locale.toLowerCase()) {
+        case 'bn':
+            return 'bd'; // Bangladesh
+        case 'el':
+            return 'gr'; // Greece
         case 'en':
-            return 'gb';
+            return 'gb'; // United Kingdom
+        case 'uk':
+            return 'ua'; // Ukraine
+        case 'vi':
+            return 'vn'; // Vietnam
         case 'zh':
-            return 'cn';
+            return 'cn'; // China
         default:
             return locale.toLowerCase();
     }

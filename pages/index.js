@@ -1,11 +1,13 @@
 import PageLayout from "../components/PageLayout";
-import { LocaleToFlagURL } from "../components/Flags";
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router'
+import { getEnglishNameFromLocaleCode } from "../components/Locales";
 
 export default function Home() {
   const t = useTranslations('index');
+  const shared = useTranslations('shared');
   const { locale } = useRouter()
 
   return (
@@ -27,10 +29,10 @@ export default function Home() {
           </button>
         </a>
         <p className="mt-3 text-gray-600">
-          <a className="hover:text-gray-700" href="https://github.com/FOSSBilling/FOSSBilling" target="_blank" rel="noopener">{t('links.sourceCode')}</a> |{" "}
-          <a className="hover:text-gray-700" href="https://docs.fossbilling.org" target="_blank" rel="noopener">{t('links.documentation')}</a> |{" "}
-          <a className="hover:text-gray-700" href="https://fossbilling.org/discord" target="_blank" rel="noopener">{t('links.discord')}</a> |{" "}
-          <a className="hover:text-gray-700" href="https://fossbilling.org/donate" target="_blank" rel="noopener">{t('links.donate')}</a>
+          <a className="hover:text-blue-700" href="https://github.com/FOSSBilling/FOSSBilling" target="_blank" rel="noopener">{t('links.sourceCode')}</a> |{" "}
+          <a className="hover:text-blue-700" href="https://docs.fossbilling.org" target="_blank" rel="noopener">{t('links.documentation')}</a> |{" "}
+          <a className="hover:text-blue-700" href="https://fossbilling.org/discord" target="_blank" rel="noopener">{t('links.discord')}</a> |{" "}
+          <a className="hover:text-blue-700" href="https://fossbilling.org/donate" target="_blank" rel="noopener">{t('links.donate')}</a>
         </p>
         </div>
 
@@ -47,7 +49,7 @@ export default function Home() {
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
             href="https://docs.fossbilling.org/faq"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-900 focus:text-blue-900"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-700 focus:text-blue-700"
             target="_blank"
             rel="noopener"
           >
@@ -58,6 +60,11 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+      <Link href="/locales">
+        {/* Maybe only show this when Accept-Language and the website language doesn't match */}
+        <a className="mb-6 text-sm text-gray-600 hover:text-blue-700">You're browsing the { getEnglishNameFromLocaleCode(locale) } website. Switch languages?</a>
+      </Link>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a

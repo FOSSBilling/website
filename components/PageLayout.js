@@ -24,7 +24,7 @@ export default function PageLayout({ children, title }) {
           name="description"
           content=""
         />
-        <title>{title} | FOSSBilling</title>
+        <title>{`${title} | FOSSBilling`}</title>
 
         {/* Favicons */}
         <link
