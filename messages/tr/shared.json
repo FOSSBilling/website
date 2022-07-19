@@ -1,8 +1,8 @@
 {
     "shared": {
-        "languageName": "English"
+        "languageName": "Türkçe"
     },
     "footer": {
-        "license": "FOSSBilling is licensed under the Apache 2.0 license."
+        "license": "FOSSBilling Apache 2.0 lisansı altında lisanslanmıştır."
     }
 }
