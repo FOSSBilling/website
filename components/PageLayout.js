@@ -2,6 +2,9 @@ import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
 import nextConfig from "../next.config";
+import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/router'
+
 const navbar = nextConfig.appConfig.navbar;
 
 function classNames(...classes) {
@@ -9,6 +12,9 @@ function classNames(...classes) {
 }
 
 export default function PageLayout({ children, title }) {
+  const t = useTranslations('index');
+  const { locale } = useRouter()
+
   return (
     <div>
       <Head>

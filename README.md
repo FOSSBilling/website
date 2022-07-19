@@ -16,3 +16,6 @@ We're trying hard to find new people to help us reach new languages. If you're w
 The website will be rebuilt automatically after every push and deployed to Vercel. Outside contributors don't need to do anything do get the website deployed. Team members should have access to the Vercel account.
 
 [![Powered by Vercel](https://fossbilling.org/powered-by-vercel.svg)](https://vercel.com?utm_source=fossbilling&utm_campaign=oss)
+
+## Other credits
+* Flags were grabbed from [flag-icons by lipis](https://github.com/lipis/flag-icons)

@@ -1,4 +1,5 @@
 import PageLayout from "../components/PageLayout";
+import { LocaleToFlagURL } from "../components/Flags";
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router'

@@ -4,7 +4,7 @@
   "homepage": "https://fossbilling.org",
   "license": "Apache-2.0",
   "bugs": {
-    "url" : "https://github.com/fossbilling/website/issues"
+    "url": "https://github.com/fossbilling/website/issues"
   },
   "repository": "github:fossbilling/website",
   "private": true,
@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "next": "12.1.6",
+    "next-intl": "^2.7.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "next-intl": "^2.7.4"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
