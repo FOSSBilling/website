@@ -15,8 +15,8 @@ export function LocaleToFlagClass(locale) {
 }
 
 export function LocaleToFlagURL(locale) {
-    const protocol = "https://";
-    const hostname = "fossbilling.org";
+    const protocol = "";
+    const hostname = "";
     const folder = "/flags/";
 
     const countryCode = LocaleToCountryCode(locale);
