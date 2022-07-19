@@ -3,7 +3,11 @@
 const nextConfig = {
   reactStrictMode: true,
   i18n: {
-    locales: ['en', 'tr'],
+    locales: ['en', 'bn', 'bg', 'nl',
+              'fr', 'de', 'el', 'lt',
+              'pl', 'ro', 'ru', 'es',
+              'tr', 'uk', 'vi'
+            ], // Find a way to keep this synchronized with Crowdin
     defaultLocale: 'en',
   },
   async redirects() {
@@ -86,4 +90,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
