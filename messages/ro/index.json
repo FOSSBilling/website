@@ -1,18 +1,18 @@
 {
   "index": {
-    "title": "Homepage",
-    "welcome": "Welcome to <blue>FOSSBilling</blue>!",
-    "downloadPreview": "Download the latest preview",
+    "title": "Pagină principală",
+    "welcome": "Bun venit pe <blue>FOSSBilling</blue>!",
+    "downloadPreview": "Descărcați cea mai recentă previzualizare",
     "links": {
-      "sourceCode": "source code",
-      "documentation": "documentation",
+      "sourceCode": "codul sursă",
+      "documentation": "documentație",
       "discord": "discord",
-      "donate": "donate"
+      "donate": "donează"
     },
     "cards": {
       "faq": {
-        "title": "FAQ",
-        "description": "What happened to BoxBilling?"
+        "title": "Întrebări",
+        "description": "Ce s-a întâmplat cu BoxBilling?"
       }
     }
   }
