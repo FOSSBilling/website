@@ -1,3 +1,19 @@
 {
-    "shared": {}
+  "index": {
+    "title": "Homepage",
+    "welcome": "Welcome to <blue>FOSSBilling</blue>!",
+    "downloadPreview": "Download the latest preview",
+    "links": {
+      "sourceCode": "source code",
+      "documentation": "documentation",
+      "discord": "discord",
+      "donate": "donate"
+    },
+    "cards": {
+      "faq": {
+        "title": "FAQ",
+        "description": "What happened to BoxBilling?"
+      }
+    }
+  }
 }
