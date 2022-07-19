@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </main>
 
-      <Link href="/locales">
+      <Link href="/locales" locale="en">
         {/* Maybe only show this when Accept-Language and the website language doesn't match */}
         <a className="mb-6 text-sm text-gray-600 hover:text-blue-700">You're browsing the { getEnglishNameFromLocaleCode(locale) } website. Switch languages?</a>
       </Link>
