@@ -1,12 +1,14 @@
-import Layout from "../components/layout";
+import PageLayout from "../components/PageLayout";
 import Image from 'next/image';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/router'
 
 export default function Home() {
-  const t = useTranslations('index.content');
+  const t = useTranslations('index');
+  const { locale } = useRouter()
 
   return (
-    <Layout home>
+    <PageLayout home title={t('title')}>
       <div className="flex min-h-screen flex-col items-center justify-center py-2">
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
@@ -67,7 +69,7 @@ export default function Home() {
         </a>
       </footer>
     </div>
-    </Layout>
+    </PageLayout>
   )
 }
 
@@ -77,7 +79,10 @@ export async function getStaticProps({locale}) {
       // You can get the messages from anywhere you like. The recommended
       // pattern is to put them in JSON files separated by language and read
       // the desired one based on the `locale` received from Next.js.
-      messages: (await import(`../messages/index/${locale}.json`)).default
+      messages: {
+        ...require(`../messages/shared/${locale}.json`),
+        ...require(`../messages/index/${locale}.json`),
+      },
     }
   };
 }

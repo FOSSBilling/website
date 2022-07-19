@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Layout({ children }) {
+export default function PageLayout({ children, title }) {
   return (
     <div>
       <Head>
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
           name="description"
           content=""
         />
-        <title>FOSSBilling</title>
+        <title>{title} | FOSSBilling</title>
 
         {/* Favicons */}
         <link

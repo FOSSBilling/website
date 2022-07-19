@@ -1,21 +1,19 @@
 {
-    "index": {
-      "title": "Ana sayfa",
-      "content": {
-        "welcome": "<blue>FOSSBilling</blue>'e hoş geldiniz!",
-        "downloadPreview": "Son ön izlemeyi indir",
-        "links": {
-          "sourceCode": "kaynak kodu",
-          "documentation": "dokümantasyon",
-          "discord": "discord",
-          "donate": "bağış"
-        },
-        "cards": {
-          "faq": {
-            "title": "SSS",
-            "description": "BoxBilling'e ne oldu?"
-          }
-        }
+  "index": {
+    "title": "Ana sayfa",
+    "welcome": "<blue>FOSSBilling</blue>'e hoş geldiniz!",
+    "downloadPreview": "Son ön izlemeyi indir",
+    "links": {
+      "sourceCode": "kaynak kodu",
+      "documentation": "dokümantasyon",
+      "discord": "discord",
+      "donate": "bağış"
+    },
+    "cards": {
+      "faq": {
+        "title": "SSS",
+        "description": "BoxBilling'e ne oldu?"
       }
     }
   }
+}
