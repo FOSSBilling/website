@@ -16,7 +16,7 @@ export default function Home() {
             <a className="mt-6 mb-6 text-left">
               <Image
                 src={LocaleToFlagURL(code)}
-                alt={getEnglishNameFromLocaleCode(code)}
+                alt={"Flag of " + getEnglishNameFromLocaleCode(code)} // Handle the "the" prefix
                 width={40}
                 height={30}
               />
