@@ -73,6 +73,9 @@ export default function PageLayout({ children, title }) {
         />*/}
       </Head>
 
+      {/* Execute ASAP to avoid FOUC */}
+      <Script src="/theme.js" strategy="beforeInteractive" />
+
       <main>
         {children}
       </main>
