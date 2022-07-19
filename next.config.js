@@ -5,11 +5,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: 'https://github.com/FOSSBilling/FOSSBilling',
-        permanent: false,
-      },
-      {
         source: '/discord',
         destination: 'https://discord.com/invite/bVjMZSgtbY',
         permanent: true,
@@ -17,6 +12,11 @@ const nextConfig = {
       {
         source: '/downloads/preview',
         destination: 'https://fossbilling-public.s3.eu-central-1.amazonaws.com/FOSSBilling-preview.tar',
+        permanent: true
+      },
+      {
+        source: '/donate',
+        destination: 'https://opencollective.com/FOSSBilling',
         permanent: true
       },
     ]

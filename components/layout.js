@@ -68,7 +68,7 @@ export default function Layout({ children }) {
       </Head>
 
       <main>
-        
+        {children}
       </main>
       <Script src="/main.js" />
     </div>
