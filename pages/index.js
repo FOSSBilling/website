@@ -1,31 +1,33 @@
 import Layout from "../components/layout";
 import Image from 'next/image';
+import {useTranslations} from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('index.content');
+
   return (
     <Layout home>
       <div className="flex min-h-screen flex-col items-center justify-center py-2">
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <span className="text-blue-600">
-            FOSSBilling
-          </span>!
+          {t.rich('welcome', {
+            blue: (children) => <span className="text-blue-600">{children}</span>
+          })}
         </h1>
         
         <div className="mt-6">
         <a href="https://fossbilling.org/downloads/preview" target="_blank" rel="noopener">
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
             <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-            <span>Download the latest preview</span>
+            <span>{t('downloadPreview')}</span>
           </button>
         </a>
         <p className="mt-3 text-gray-600">
-          <a className="hover:text-gray-700" href="https://github.com/FOSSBilling/FOSSBilling" target="_blank" rel="noopener">source code</a> |{" "}
-          <a className="hover:text-gray-700" href="https://docs.fossbilling.org" target="_blank" rel="noopener">documentation</a> |{" "}
-          <a className="hover:text-gray-700" href="https://fossbilling.org/discord" target="_blank" rel="noopener">discord</a> |{" "}
-          <a className="hover:text-gray-700" href="https://fossbilling.org/donate" target="_blank" rel="noopener">donate</a>
+          <a className="hover:text-gray-700" href="https://github.com/FOSSBilling/FOSSBilling" target="_blank" rel="noopener">{t('links.sourceCode')}</a> |{" "}
+          <a className="hover:text-gray-700" href="https://docs.fossbilling.org" target="_blank" rel="noopener">{t('links.documentation')}</a> |{" "}
+          <a className="hover:text-gray-700" href="https://fossbilling.org/discord" target="_blank" rel="noopener">{t('links.discord')}</a> |{" "}
+          <a className="hover:text-gray-700" href="https://fossbilling.org/donate" target="_blank" rel="noopener">{t('links.donate')}</a>
         </p>
         </div>
 
@@ -46,9 +48,9 @@ export default function Home() {
             target="_blank"
             rel="noopener"
           >
-            <h3 className="text-2xl font-bold">FAQ &rarr;</h3>
+            <h3 className="text-2xl font-bold">{t('cards.faq.title')} &rarr;</h3>
             <p className="mt-4 text-xl">
-              What happened to BoxBilling?
+              {t('cards.faq.description')}
             </p>
           </a>
         </div>
@@ -67,4 +69,15 @@ export default function Home() {
     </div>
     </Layout>
   )
+}
+
+export async function getStaticProps({locale}) {
+  return {
+    props: {
+      // You can get the messages from anywhere you like. The recommended
+      // pattern is to put them in JSON files separated by language and read
+      // the desired one based on the `locale` received from Next.js.
+      messages: (await import(`../messages/index/${locale}.json`)).default
+    }
+  };
 }
