@@ -1,18 +1,18 @@
 {
   "index": {
     "title": "Homepage",
-    "welcome": "Welcome to <blue>FOSSBilling</blue>!",
-    "downloadPreview": "Download the latest preview",
+    "welcome": "Welkom bij <blue>FOSSBilling</blue>!",
+    "downloadPreview": "Download de laatste preview",
     "links": {
-      "sourceCode": "source code",
-      "documentation": "documentation",
+      "sourceCode": "broncode",
+      "documentation": "documentatie",
       "discord": "discord",
-      "donate": "donate"
+      "donate": "doneren"
     },
     "cards": {
       "faq": {
         "title": "FAQ",
-        "description": "What happened to BoxBilling?"
+        "description": "Wat is er gebeurd met BoxBilling?"
       }
     }
   }
