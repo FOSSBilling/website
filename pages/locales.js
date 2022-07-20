@@ -27,17 +27,17 @@ export default function Home() {
 
   return (
     <PageLayout locales title="Select your language">
-      <div className="dark:bg-black dark:text-white flex min-h-screen flex-col items-center justify-center py-2">
+      <div className="dark:bg-black dark:text-neutral-100 flex min-h-screen flex-col items-center justify-center py-2">
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">Select your language</h1>
 
         {/* Beginning of the list */}
-        <div className="mt-6 flex max-w-4xl bg-gray-50 dark:bg-gray-900 border rounded-xl flex-wrap items-center justify-around sm:w-full">
+        <div className="mt-6 flex max-w-4xl bg-gray-50 dark:bg-neutral-900 border rounded-xl flex-wrap items-center justify-around sm:w-full">
           {localeButtons}
         </div>
         {/* Ending of the list */}
-        <a href="https://github.com/fOSSBilling/website#localization" target="_blank" rel="noopener" className="mt-3 text-gray-600 hover:text-blue-700 dark:text-gray-200 dark:hover:text-blue-300">Help us with the translations</a>
+        <a href="https://github.com/fOSSBilling/website#localization" target="_blank" rel="noopener" className="mt-3 text-gray-600 hover:text-blue-700 dark:text-gray-200 dark:hover:text-blue-400">Help us with the translations</a>
 
       </main>
 
