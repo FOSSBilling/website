@@ -27,6 +27,16 @@ const nextConfig = {
         destination: 'https://opencollective.com/FOSSBilling',
         permanent: true
       },
+      {
+        source: '/feature-request',
+        destination: 'https://github.com/FOSSBilling/FOSSBilling/issues/new?assignees=&labels=feature+request&template=feature_request.md&title=%5BFeature+Request%5D',
+        permanent: true
+      },
+      {
+        source: '/bug-report',
+        destination: 'https://github.com/FOSSBilling/FOSSBilling/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBug%5D',
+        permanent: true
+      }
     ]
   },
   // FOSSBilling-specific configuration
