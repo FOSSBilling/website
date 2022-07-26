@@ -1,0 +1,19 @@
+{
+  "index": {
+    "title": "首頁",
+    "welcome": "歡迎來到 <blue>FOSSBilling</blue>!",
+    "downloadPreview": "下載最新預覽",
+    "links": {
+      "sourceCode": "原始碼",
+      "documentation": "說明文件",
+      "discord": "discord",
+      "donate": "捐款"
+    },
+    "cards": {
+      "faq": {
+        "title": "常見問答",
+        "description": "BoxBilling 發生什麼事了？"
+      }
+    }
+  }
+}
