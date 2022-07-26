@@ -1,8 +1,8 @@
 {
     "shared": {
-        "languageName": "English"
+        "languageName": "正體中文"
     },
     "footer": {
-        "license": "FOSSBilling is licensed under the Apache 2.0 license."
+        "license": "FOSSBilling 以 Apache 2.0 授權條款發布。"
     }
 }
